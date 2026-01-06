@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+}
+
+/* Layout principal */
+.layout {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+/* Container à esquerda */
+.container {
+    width: 30%;
+    min-width: 380px;
+    padding: 40px 20px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.08);
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222;
+    text-align: center;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 140px;
+    padding: 12px;
+    resize: none;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+/* Botão */
+button {
+    padding: 12px;
+    background: #4a6cf7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #3957d8;
+}
+
+/* Resultado */
+.result {
+    margin-top: 25px;
+    background: #f7f9fc;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #4a6cf7;
+}
+
+.hidden {
+    display: none;
+}
+
+button:disabled,
+textarea:disabled {
+    background: #ddd;
+    cursor: not-allowed;
+}
+
+/* Background à direita */
+.background {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}

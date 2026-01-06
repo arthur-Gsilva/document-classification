@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Classificador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="layout">
+        <div class="container">
+            <h1>Text Classifier</h1>
+
+            <textarea id="textInput" placeholder="Type your text here..."></textarea>
+
+            <button onclick="predict()" id="btnPredict">Classify</button>
+
+            <div id="result" class="result hidden">
+                <p><strong>Category:</strong> <span id="label"></span></p>
+                <p><strong>Confidence:</strong> <span id="confidence"></span></p>
+            </div>
+        </div>
+
+        <div class="background"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
